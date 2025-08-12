@@ -271,13 +271,13 @@ def result_count(func):
 def write_to_file(task_name, output_filename, output):
     # 写入结果到文件
     if task_name == 'backup_config.py':
-        with open(os.path.join(backup_path, output_filename), 'a', encoding="utf-8") as f:
+        with open(os.path.join(backup_path, output_filename), 'a', encoding="GB18030") as f:
             f.write(output)
     elif task_name == 'add_config.py':
-        with open(os.path.join(config_path, output_filename), 'a', encoding="utf-8") as f:
+        with open(os.path.join(config_path, output_filename), 'a', encoding="GB18030") as f:
             f.write(output)
     elif task_name == 'undifined.py':
-        with open(os.path.join(config_path, output_filename), 'a', encoding="utf-8") as f:
+        with open(os.path.join(config_path, output_filename), 'a', encoding="GB18030") as f:
             f.write(output)
     else:
         pass
